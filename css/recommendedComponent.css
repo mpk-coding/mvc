@@ -1,0 +1,47 @@
+.recommended__container:not(:first-child) {
+  margin: 1rem 0 0 0;
+}
+
+.recommended__container {
+  padding: 1rem;
+  background: var(--bs-light);
+  border: 1px solid var(--bs-primary);
+  border-radius: 0.25rem;
+  flex-flow: row nowrap;
+  display: flex;
+}
+
+.recommended__data {
+  flex: 1 1;
+
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.recommended__data * {
+  margin: 0;
+}
+
+.recommended__container > * {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+}
+
+h4.recommended__profile.text-primary {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+
+  padding-bottom: 0.1em;
+}
+
+h4.recommended__followers.text-muted {
+  flex: 0 0 100%;
+  font-size: 1rem;
+}
+
+.recommended__action {
+  align-items: center;
+}

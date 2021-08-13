@@ -1,0 +1,44 @@
+.profile {
+  overflow: hidden;
+}
+
+.profile * {
+  margin: 0;
+}
+
+.profile__header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+}
+
+.profile__img {
+  flex: 0 0 4rem;
+  height: 4rem;
+}
+
+.profile__img img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.profile__info {
+  padding-left: 0.5rem;
+  overflow: hidden;
+}
+
+.profile__name * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile > *:not(:last-child) {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bs-gray);
+}
+
+.profile > *:not(:first-child) {
+  padding-top: 0.5rem;
+}
